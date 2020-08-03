@@ -11,8 +11,9 @@ The goal of this [Google Colab](https://colab.research.google.com/) notebook is 
 ## Data
 
 DETR will be fine-tuned on a tiny dataset: the [`balloon` dataset](https://github.com/matterport/Mask_RCNN/tree/master/samples/balloon).
+We refer to it as the `custom` dataset.
 
-For our `custom` dataset, we expect the directory structure to be the following:
+We expect the directory structure to be the following:
 ```
 path/to/coco/
 ├ annotations/  # JSON annotations
