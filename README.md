@@ -6,11 +6,13 @@ The goal of this [Google Colab](https://colab.research.google.com/) notebook is 
 
 -   Acquire a dataset,
 -   Convert the dataset to the COCO format,
--   Run `finetune_detr.ipynb` to fine-tune DETR on the [`balloon` dataset](https://github.com/matterport/Mask_RCNN/tree/master/samples/balloon).
+-   Run `finetune_detr.ipynb` to fine-tune DETR on the `balloon` dataset.
 
 ## Data
 
-For our `custom` dataset, We expect the directory structure to be the following:
+DETR will be fine-tuned on a tiny dataset: the [`balloon` dataset](https://github.com/matterport/Mask_RCNN/tree/master/samples/balloon).
+
+For our `custom` dataset, we expect the directory structure to be the following:
 ```
 path/to/coco/
 ├ annotations/  # JSON annotations
