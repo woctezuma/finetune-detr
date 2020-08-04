@@ -7,7 +7,10 @@ The goal of this [Google Colab](https://colab.research.google.com/) notebook is 
 -   Acquire a dataset, e.g. the the `balloon` dataset,
 -   Convert the dataset to the COCO format,
 -   Run `finetune_detr.ipynb` to fine-tune DETR on this dataset.
--   (WIP) Alternatively, run `finetune_detectron2.ipynb` to rely on the detectron2 wrapper.
+-   Alternatively, run `finetune_detectron2.ipynb` to rely on the detectron2 wrapper.
+
+NB: Fine-tuning is recommended if your dataset has [less than 10k images](https://github.com/facebookresearch/detr/issues/9#issuecomment-635357693).
+Otherwise, training from scratch would be an option.
 
 ## Data
 
