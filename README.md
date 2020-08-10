@@ -41,7 +41,7 @@ NB: if you are confused about the number of classes, check [this Github issue](h
 -   Official notebooks:
     - An [official notebook](https://colab.research.google.com/github/facebookresearch/detr/blob/colab/notebooks/detr_attention.ipynb) showcasing DETR
     - An [official notebook](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocoDemo.ipynb) showcasing the COCO API
-    - An [official notebook](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) showcasing the Detectron2 wrapper for DETR
+    - An [official notebook](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) showcasing the detectron2 wrapper for DETR
 -   Tutorials:
     - A [Github issue](https://github.com/facebookresearch/detr/issues/9) discussing the fine-tuning of DETR
     - A [Github Gist](https://gist.github.com/mlk1337/651297e28199b4bb7907fc413c49f58f) explaining how to fine-tune DETR
