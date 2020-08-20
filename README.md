@@ -2,9 +2,9 @@
 
 The goal of this [Google Colab](https://colab.research.google.com/) notebook is to fine-tune Facebook's DETR (DEtection TRansformer).
 
-![With pre-trained DETR][pretrained-detr-image] ![With finetuned DETR][finetuned-detr-image] ![Total loss during training][training-loss-image]
+<img alt="With pre-trained DETR" src="https://github.com/woctezuma/finetune-detr/wiki/img/pretrained_detr.jpg" width="375"> -> <img alt="With finetuned DETR" src="https://github.com/woctezuma/finetune-detr/wiki/img/finetuned_detr.jpg" width="375">
 
-From left to right: result obtained with pre-trained DETR, with fine-tuned DETR, and total loss during training.
+From left to right: results obtained with pre-trained DETR, and after fine-tuning on the `balloon` dataset.
 
 ## Usage
 
