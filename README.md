@@ -44,7 +44,7 @@ NB: if you are confused about the number of classes, check [this Github issue](h
     - An [official notebook](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) showcasing the detectron2 wrapper for DETR
 -   Tutorials:
     - A [Github issue](https://github.com/facebookresearch/detr/issues/9) discussing the fine-tuning of DETR
-    - A [Github Gist](https://gist.github.com/mlk1337/651297e28199b4bb7907fc413c49f58f) explaining how to fine-tune DETR
+    - A [Github Gist](https://gist.github.com/woctezuma/e9f8f9fe1737987351582e9441c46b5d) explaining how to fine-tune DETR
     - A [Github issue](https://github.com/facebookresearch/detr/issues/9#issuecomment-636391562) explaining how to load a fine-tuned DETR
 -   Datasets:
     - A [blog post](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46) about another approach (Mask R-CNN) and the [`balloon`](https://github.com/matterport/Mask_RCNN/tree/master/samples/balloon) dataset
