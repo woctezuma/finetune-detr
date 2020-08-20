@@ -2,6 +2,10 @@
 
 The goal of this [Google Colab](https://colab.research.google.com/) notebook is to fine-tune Facebook's DETR (DEtection TRansformer).
 
+![With pre-trained DETR][pretrained-detr-image] ![With finetuned DETR][finetuned-detr-image] ![Total loss during training][training-loss-image]
+
+From left to right: result obtained with pre-trained DETR, with fine-tuned DETR, and total loss during training.
+
 ## Usage
 
 -   Acquire a dataset, e.g. the the `balloon` dataset,
@@ -51,3 +55,7 @@ NB: if you are confused about the number of classes, check [this Github issue](h
     - A [notebook](https://github.com/matterport/Mask_RCNN/blob/master/samples/nucleus/inspect_nucleus_model.ipynb) about the [`nucleus`](https://github.com/matterport/Mask_RCNN/tree/master/samples/nucleus) dataset
 
 <!-- Definitions -->
+
+[pretrained-detr-image]: <https://github.com/woctezuma/finetune-detr/wiki/img/pretrained_detr.jpg>
+[training-loss-image]: <https://github.com/woctezuma/finetune-detr/wiki/img/loss_finetuning_detectron2.jpg>
+[finetuned-detr-image]: <https://github.com/woctezuma/finetune-detr/wiki/img/finetuned_detr.jpg>
