@@ -10,8 +10,8 @@ From left to right: results obtained with pre-trained DETR, and after fine-tunin
 
 -   Acquire a dataset, e.g. the the `balloon` dataset,
 -   Convert the dataset to the COCO format,
--   Run `finetune_detr.ipynb` to fine-tune DETR on this dataset.
--   Alternatively, run `finetune_detectron2.ipynb` to rely on the detectron2 wrapper.
+-   Run [`finetune_detr.ipynb`][finetune_detr-notebook] to fine-tune DETR on this dataset.
+-   Alternatively, run [`finetune_detectron2.ipynb`][finetune_detectron2-notebook] to rely on the detectron2 wrapper.
 
 NB: Fine-tuning is recommended if your dataset has [less than 10k images](https://github.com/facebookresearch/detr/issues/9#issuecomment-635357693).
 Otherwise, training from scratch would be an option.
@@ -59,3 +59,6 @@ NB: if you are confused about the number of classes, check [this Github issue](h
 [pretrained-detr-image]: <https://github.com/woctezuma/finetune-detr/wiki/img/pretrained_detr.jpg>
 [training-loss-image]: <https://github.com/woctezuma/finetune-detr/wiki/img/loss_finetuning_detectron2.jpg>
 [finetuned-detr-image]: <https://github.com/woctezuma/finetune-detr/wiki/img/finetuned_detr.jpg>
+
+[finetune_detr-notebook]: <https://colab.research.google.com/github/woctezuma/finetune-detr/blob/master/finetune_detr.ipynb>
+[finetune_detectron2-notebook]: <https://colab.research.google.com/github/woctezuma/finetune-detr/blob/master/finetune_detectron2.ipynb>
