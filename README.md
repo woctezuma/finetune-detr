@@ -21,6 +21,8 @@ Otherwise, training from scratch would be an option.
 DETR will be fine-tuned on a tiny dataset: the [`balloon` dataset](https://github.com/matterport/Mask_RCNN/tree/master/samples/balloon).
 We refer to it as the `custom` dataset.
 
+There are 61 images in the training set, and 13 images in the validation set.
+
 We expect the directory structure to be the following:
 ```
 path/to/coco/
