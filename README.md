@@ -35,10 +35,32 @@ path/to/coco/
 
 NB: if you are confused about the number of classes, check [this Github issue](https://github.com/facebookresearch/detr/issues/108#issuecomment-650269223).
 
+## Metrics
+
+Typical metrics to monitor are shown in [this notebook][metrics-notebook].
+
+As mentioned in [the paper](https://arxiv.org/abs/2005.12872), there are 3 components to the matching cost and to the total loss:
+-   classification loss,
+-   l1 bounding box distance loss,
+-   [Generalized Intersection over Union (GIoU)](https://giou.stanford.edu/) loss, which is scale-invariant.
+
+Instead of the classification loss, you could directly monitor the classification error, i.e. the "weighted fraction of misclassified observations", which is easier to make sense of.
+
+Finally, you can monitor the Average Precision (AP), which is [the primary challenge metric](https://cocodataset.org/#detection-eval) for the COCO dataset.
+
+## Results
+
+You should obtain acceptable results with 10 epochs, which require a few minutes of fine-tuning.
+
+Out of curiosity, I have over-finetuned the model for 300 epochs (close to 3 hours).
+Here are:
+-   the last [checkpoint][checkpoint-300-epochs] (~ 500 MB),
+-   the [log file][log-300-epochs].
+
 ## References
 
 -   Official repositories:
-    - Facebook's [DETR](https://github.com/facebookresearch/detr)
+    - Facebook's [DETR](https://github.com/facebookresearch/detr) (and [the paper](https://arxiv.org/abs/2005.12872))
     - Facebook's [detectron2 wrapper for DETR](https://github.com/facebookresearch/detr/tree/master/d2) ; caveat: this wrapper only supports box detection
     - [DETR checkpoints](https://github.com/facebookresearch/detr#model-zoo): remove the classification head, then fine-tune
 -   My forks:
@@ -64,3 +86,8 @@ NB: if you are confused about the number of classes, check [this Github issue](h
 
 [finetune_detr-notebook]: <https://colab.research.google.com/github/woctezuma/finetune-detr/blob/master/finetune_detr.ipynb>
 [finetune_detectron2-notebook]: <https://colab.research.google.com/github/woctezuma/finetune-detr/blob/master/finetune_detectron2.ipynb>
+
+[checkpoint-300-epochs]: <https://drive.google.com/file/d/1BCtf4FxHl7F9ZJjxJ_lXymg_DAOxsMJQ/view?usp=sharing>
+[log-300-epochs]: <https://drive.google.com/file/d/13wkKqRikEwjrDARaLg88qt7uJsk_cZzQ/view?usp=sharing>
+
+[metrics-notebook]: <https://colab.research.google.com/github/lessw2020/Thunder-Detr/blob/master/View_your_training_results.ipynb>
