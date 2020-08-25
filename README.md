@@ -57,6 +57,8 @@ Here are:
 -   the last [checkpoint][checkpoint-300-epochs] (~ 500 MB),
 -   the [log file][log-300-epochs].
 
+All of the validation results are shown in [`view_balloon_validation.ipynb`][view-validation-notebook].
+
 ## References
 
 -   Official repositories:
@@ -86,6 +88,7 @@ Here are:
 
 [finetune_detr-notebook]: <https://colab.research.google.com/github/woctezuma/finetune-detr/blob/master/finetune_detr.ipynb>
 [finetune_detectron2-notebook]: <https://colab.research.google.com/github/woctezuma/finetune-detr/blob/master/finetune_detectron2.ipynb>
+[view-validation-notebook]: <https://colab.research.google.com/github/woctezuma/finetune-detr/blob/view-validation/view_balloon_validation.ipynb>
 
 [checkpoint-300-epochs]: <https://drive.google.com/file/d/1BCtf4FxHl7F9ZJjxJ_lXymg_DAOxsMJQ/view?usp=sharing>
 [log-300-epochs]: <https://drive.google.com/file/d/13wkKqRikEwjrDARaLg88qt7uJsk_cZzQ/view?usp=sharing>
