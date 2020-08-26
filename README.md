@@ -59,7 +59,8 @@ def loss_labels(self, outputs, targets, indices, num_boxes, log=True):
 def loss_boxes(self, outputs, targets, indices, num_boxes):
     """Compute the losses related to the bounding boxes, the L1 regression loss and the GIoU loss
        targets dicts must contain the key "boxes" containing a tensor of dim [nb_target_boxes, 4]
-       The target boxes are expected in format (center_x, center_y, w, h), normalized by the image size.
+       The target boxes are expected in format (center_x, center_y, w, h),normalized by the image
+       size.
     """
     [...]
     loss_bbox = F.l1_loss(src_boxes, target_boxes, reduction='none')
@@ -77,8 +78,9 @@ Moreover, there are two errors:
 -   cardinality error,
 ```python
 def loss_cardinality(self, outputs, targets, indices, num_boxes):
-    """ Compute the cardinality error, ie the absolute error in the number of predicted non-empty boxes
-    This is not really a loss, it is intended for logging purposes only. It doesn't propagate gradients
+    """ Compute the cardinality error, ie the absolute error in the number of predicted non-empty
+    boxes. This is not really a loss, it is intended for logging purposes only. It doesn't
+    propagate gradients
     """
     [...]
     # Count the number of predictions that are NOT "no-object" (which is the last class)
