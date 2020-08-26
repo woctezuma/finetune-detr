@@ -88,7 +88,7 @@ def loss_cardinality(self, outputs, targets, indices, num_boxes):
     card_err = F.l1_loss(card_pred.float(), tgt_lengths.float())
     losses = {'cardinality_error': card_err}
 ```
--   classification error,
+-   class error,
 ```python
     # TODO this should probably be a separate loss, not hacked in this one here
     losses['class_error'] = 100 - accuracy(src_logits[idx], target_classes_o)[0]
