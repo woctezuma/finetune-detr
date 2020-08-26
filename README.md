@@ -37,11 +37,10 @@ NB: if you are confused about the number of classes, check [this Github issue](h
 
 ## Metrics
 
-Typical metrics to monitor are shown in [this notebook][metrics-notebook].
-These include:
--   losses (total loss, classification loss, l1 bbox distance loss, GIoU loss,
--   errors (cardinality error, class error),
--   the Average Precision (AP), which is [the primary challenge metric](https://cocodataset.org/#detection-eval) for the COCO dataset.
+Typical metrics to monitor, partially shown in [this notebook][metrics-notebook], include:
+-   the Average Precision (AP), which is [the primary challenge metric](https://cocodataset.org/#detection-eval) for the COCO dataset,
+-   losses (total loss, classification loss, l1 bbox distance loss, GIoU loss),
+-   errors (cardinality error, class error).
 
 As mentioned in [the paper](https://arxiv.org/abs/2005.12872), there are 3 components to the matching cost and to the total loss:
 -   classification loss,
