@@ -87,7 +87,7 @@ def loss_cardinality(self, outputs, targets, indices, num_boxes):
     card_err = F.l1_loss(card_pred.float(), tgt_lengths.float())
     losses = {'cardinality_error': card_err}
 ```
--   class error,
+-   [class error](https://github.com/facebookresearch/detr/blob/5e66b4cd15b2b182da347103dd16578d28b49d69/models/detr.py#L126),
 ```python
     # TODO this should probably be a separate loss, not hacked in this one here
     losses['class_error'] = 100 - accuracy(src_logits[idx], target_classes_o)[0]
