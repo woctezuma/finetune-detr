@@ -154,4 +154,4 @@ All of the validation results are shown in [`view_balloon_validation.ipynb`][vie
 [pycocoDemo-notebook]: <https://colab.research.google.com/github/cocodataset/cocoapi/blob/master/PythonAPI/pycocoDemo.ipynb>
 [detectron2-notebook]: <https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5>
 
-[nucleus-notebook]: <https://github.com/matterport/Mask_RCNN/blob/master/samples/nucleus/inspect_nucleus_model.ipynb>
+[nucleus-notebook]: <https://colab.research.google.com/github/matterport/Mask_RCNN/blob/master/samples/nucleus/inspect_nucleus_model.ipynb>
