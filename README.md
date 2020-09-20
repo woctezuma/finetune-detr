@@ -11,7 +11,9 @@ From left to right: results obtained with pre-trained DETR, and after fine-tunin
 -   Acquire a dataset, e.g. the the `balloon` dataset,
 -   Convert the dataset to the COCO format,
 -   Run [`finetune_detr.ipynb`][finetune_detr-notebook] to fine-tune DETR on this dataset.
+[![Open In Colab][colab-badge]][finetune_detr-notebook]
 -   Alternatively, run [`finetune_detectron2.ipynb`][finetune_detectron2-notebook] to rely on the detectron2 wrapper.
+[![Open In Colab][colab-badge]][finetune_detectron2-notebook]
 
 NB: Fine-tuning is recommended if your dataset has [less than 10k images](https://github.com/facebookresearch/detr/issues/9#issuecomment-635357693).
 Otherwise, training from scratch would be an option.
@@ -108,6 +110,7 @@ Here are:
 -   the [log file][log-300-epochs].
 
 All of the validation results are shown in [`view_balloon_validation.ipynb`][view-validation-notebook].
+[![Open In Colab][colab-badge]][view-validation-notebook]
 
 ## References
 
@@ -119,16 +122,16 @@ All of the validation results are shown in [`view_balloon_validation.ipynb`][vie
     - My [fork](https://github.com/woctezuma/detr/tree/finetune) of DETR to fine-tune on a dataset with a single class
     - My [fork](https://github.com/woctezuma/VIA2COCO/tree/fixes) of VIA2COCO to convert annotations from VIA format to COCO format
 -   Official notebooks:
-    - An [official notebook](https://colab.research.google.com/github/facebookresearch/detr/blob/colab/notebooks/detr_attention.ipynb) showcasing DETR
-    - An [official notebook](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocoDemo.ipynb) showcasing the COCO API
-    - An [official notebook](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) showcasing the detectron2 wrapper for DETR
+    - An [official notebook][detr_attention-notebook] showcasing DETR
+    - An [official notebook][pycocoDemo-notebook] showcasing the COCO API
+    - An [official notebook][detectron2-notebook] showcasing the detectron2 wrapper for DETR
 -   Tutorials:
     - A [Github issue](https://github.com/facebookresearch/detr/issues/9) discussing the fine-tuning of DETR
     - A [Github Gist](https://gist.github.com/woctezuma/e9f8f9fe1737987351582e9441c46b5d) explaining how to fine-tune DETR
     - A [Github issue](https://github.com/facebookresearch/detr/issues/9#issuecomment-636391562) explaining how to load a fine-tuned DETR
 -   Datasets:
     - A [blog post](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46) about another approach (Mask R-CNN) and the [`balloon`](https://github.com/matterport/Mask_RCNN/tree/master/samples/balloon) dataset
-    - A [notebook](https://github.com/matterport/Mask_RCNN/blob/master/samples/nucleus/inspect_nucleus_model.ipynb) about the [`nucleus`](https://github.com/matterport/Mask_RCNN/tree/master/samples/nucleus) dataset
+    - A [notebook][nucleus-notebook] about the [`nucleus`](https://github.com/matterport/Mask_RCNN/tree/master/samples/nucleus) dataset
 
 <!-- Definitions -->
 
@@ -144,3 +147,11 @@ All of the validation results are shown in [`view_balloon_validation.ipynb`][vie
 [log-300-epochs]: <https://drive.google.com/file/d/13wkKqRikEwjrDARaLg88qt7uJsk_cZzQ/view?usp=sharing>
 
 [metrics-notebook]: <https://colab.research.google.com/github/lessw2020/Thunder-Detr/blob/master/View_your_training_results.ipynb>
+
+[colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
+
+[detr_attention-notebook]: <https://colab.research.google.com/github/facebookresearch/detr/blob/colab/notebooks/detr_attention.ipynb>
+[pycocoDemo-notebook]: <https://colab.research.google.com/github/cocodataset/cocoapi/blob/master/PythonAPI/pycocoDemo.ipynb>
+[detectron2-notebook]: <https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5>
+
+[nucleus-notebook]: <https://github.com/matterport/Mask_RCNN/blob/master/samples/nucleus/inspect_nucleus_model.ipynb>
